@@ -16,46 +16,6 @@ GOLF_WEBSITE = os.getenv("GOLF_WEBSITE")
 GOLF_RESERVATION_SITE = os.getenv("GOLF_RESERVATION_SITE")
 
 def get_user_inputs():
-    # while True:
-    #     user_input = input("Please enter tee start time between 5 (5AM) and 23 (11PM): ")
-        
-    #     try:
-    #         target_start_time = int(user_input)
-    #         if (target_start_time < 5 or target_start_time > 23):
-    #             print("Invalid time. Please use mm-dd-yyyy format. Please try again.")
-    #             continue
-    #         break  
-    #     except ValueError:
-    #         print("Invalid time. Please use mm-dd-yyyy format. Please try again.")
-
-    # while True:
-    #     user_input = input(f"Please enter tee end time between tee start time {target_start_time} and 23 (11PM): ")
-        
-    #     try:
-    #         target_end_time = int(user_input)
-    #         if (target_end_time < 5 or target_end_time > 23 or target_end_time < target_start_time):
-    #             print("Invalid time. Please use mm-dd-yyyy format. Please try again.")
-    #             continue
-    #         break  
-    #     except ValueError:
-    #         print("Invalid time. Please use mm-dd-yyyy format. Please try again.")
-
-    # while True:
-    #     user_email = input(f"Please enter login email address: ")
-    #     if ("@" not in user_email or ".com" not in user_email):
-    #         print("Invalid email.")
-    #         continue
-    #     break
-
-    # while True:
-    #     user_password = input(f"Please enter login password: ")
-    #     if (len(user_password) < 3):
-    #         print("Invalid password.")
-    #         continue
-    #     break
-    
-    # return (target_start_time, target_end_time, user_email, user_password)
-
     title = "Golf Registration Tee Start Time"
     msg = "Tee 시작 시간의 시작 범위를 입력해주세요. 자연수를 입력 해야하며 5 (오전 5시) 부터 22 (오후 10시) 까지 가능합니다."
     default = 5
