@@ -2,3 +2,4 @@
 /venv
 /output
 chromedriver.exe
+__pycache__
