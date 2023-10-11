@@ -65,8 +65,9 @@ def register(tee_start_time: int, tee_end_time: int, email: str, password: str):
     password_input_element.send_keys(password)
     sign_in_button = driver.find_element(By.XPATH, ".//button[@type='submit']")
 
-    wait_until_registration()
     sign_in_button.click()
+    wait_until_registration()
+    driver.refresh()    
 
     # Chooses the last day in calendar
     while True:
