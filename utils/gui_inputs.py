@@ -16,7 +16,7 @@ def get_tee_end_time_range(tee_start_time: int) -> int:
     upper_bound = 23
     return easygui.integerbox(msg, title, default, lower_bound, upper_bound)
 
-def get_login_information() -> list:
+def get_login_information() -> list[str]:
     msg = "로그인 정보를 입력해주세요."
     title = "Golf Registration Login"
     fieldNames = ["User Email", "Password"]
