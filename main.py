@@ -85,14 +85,12 @@ def register(tee_start_time: int, tee_end_time: int, email: str, password: str):
             print("Tee times not update rendered yet.")
             continue
 
-        if (tee_times_length == -1):
-            time.sleep(5)
         tee_times_length = len(tee_times)
 
         # Choosing the second item because the first one is likely to be more popular
         tee_times[0].find_element(By.CLASS_NAME, "btnStepper").click()
         try:
-            no_longer_available_popup = driver.find_element(By.ID, 'cdk-overlay-0')
+            no_longer_available_popup = driver.find_element(By.CLASS_NAME, 'cdk-overlay-container')
             if (no_longer_available_popup):
                 print("Looks like someone already booked it.")
                 no_longer_available_popup.find_element(By.TAG_NAME, 'button').click()
